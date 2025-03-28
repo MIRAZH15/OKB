@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="assets/img/icon-okb.png" type="image/png">
+	<link rel="stylesheet" href="assets/style/style.css">
+	<title>ОКБ | Главная старница</title>
+</head>
+
+<body>
+	<div class="move-header">
+		<header>
+			<div class="box-logo-and-nav">
+				<img onclick="window.location.href='index.html';" src="assets/img/logo-no-bg-preview (carve.photos).png" alt="logo" class="logo">
+				<nav class="nav-header" id="nav-header">
+					<a href="">Частным лицам</a>
+					<a href="">Бизнесу</a>
+					<a href="">Акционерам</a>
+					<a href="">Еще</a>
+				</nav>
+			</div>
+			<div class="box-theams-account">
+				<div class="fon-account">
+					<div class="fon2-account" onclick="window.location.href='entrance.html';">
+						<img class="user" src="assets/img/icons8-male-user-90.png" alt="account">
+					</div>
+				</div>
+				<div class="burger" id="burger">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</div>
+				<input type="checkbox" id="toggle_checkbox" checked>
+				<label for="toggle_checkbox">
+					<div id="ball-fon"></div>
+					<div id="star">
+						<div class="star" id="star-1">✸</div>
+					</div>
+					<div id="moon"><img class="moon-img" src="assets/img/icons8-do-not-disturb-ios-90.png" alt="moon">
+					</div>
+				</label>
+			</div>
+		</header>
+		<div class="dividing-line"></div>
+	</div>
+	<main>
+		<section class="recommendations">
+			<img class="recommendations-img"
+				src="assets/img/2021-recap-credit-card-users-spent-rs-39000-crore-on-digital-payments.png"
+				alt="recommendations">
+			<div class="right-block">
+				<h1>Дебетовая карта, <br>
+					которую рекомендуют <br> ваши друзья</h1>
+				<p>Бесплатное обслуживание, <br>
+					переводы без комиссии</p>
+				<button class="arrange">Оформить карту</button>
+			</div>
+		</section>
+		<section class="cards">
+			<div class="cards-mode">
+				<button id="privateBtn" class="cards-mode-button" onclick="toggleButtons('private')">Частным
+					лицам</button>
+				<button id="businessBtn" class="cards-mode-button" onclick="toggleButtons('business')">Бизнесу</button>
+			</div>
+			<div class="cards-box">
+				<div class="card" onclick="window.location.href='catalog-maps.html';">
+					<p>Дебетовая <br> карта</p>
+					<img src="assets/img/i.png" alt="Дебеьлвая карта">
+				</div>
+				<div class="card">
+					<p>Кредитная <br> карта</p>
+					<img src="assets/img/JD-11-1024.png" alt="Кредитная карта">
+				</div>
+				<div class="card">
+					<p>Сбережения</p>
+					<img src="assets/img/removebg.png" alt="Сбережения">
+				</div>
+				<div class="card">
+					<p>Ипотека</p>
+					<img src="assets/img/removebg (2).png" alt="Ипотека">
+				</div>
+				<div class="card">
+					<p>Инвестиции</p>
+					<img src="assets/img/GnuCash_logo.svg.png" alt="Инвестиции">
+				</div>
+			</div>
+		</section>
+		<section class="calculate-fon">
+			<div class="calculate">
+				<h1 class="calculate-h1">Рассчитать</h1>
+				<div class="calculate-btn-box">
+					<button class="calculate-btn calculate-btn-1">Ипотека</button>
+					<button class="calculate-btn calculate-btn-2">Автокредит</button>
+				</div>
+				<div class="calculate-box">
+					<div class="calculate-box-left">
+						<div class="calculate-input-left-right">
+							<div class="calculate-input">
+								<p class="calculate-input-top">Какая сумма вас интересует?</p>
+								<p class="calculate-input-bottom">100 тыс ₽</p>
+								<input type="range" class="calculate-range" id="colorSlider" min="0" max="100"
+									value="0">
+							</div>
+							<div class="sum-up">
+								<p class="sum-up-1">100 тыс ₽</p>
+								<p class="sum-up-2">50 млн ₽</p>
+							</div>
+							<div class="calculate-input">
+								<p class="calculate-input-top">На какой срок хотите взять кредит?</p>
+								<p class="calculate-input-bottom">5 лет</p>
+								<input type="range" class="calculate-range" id="colorSlider1" min="0" max="100"
+									value="0">
+							</div>
+							<div class="sum-up">
+								<p class="sum-up-1">10 месяцев</p>
+								<p class="sum-up-2">10 лет</p>
+							</div>
+							<div class="salary-pension">
+								<p>Я получаю зарплату на карту ОКБ</p>
+								<div id="toggle1" class="toggle1" onclick="toggleSwitch1()">
+									<div class="toggle-circle1"></div>
+								</div>
+							</div>
+
+							<div class="calculate-line"></div>
+							<div class="salary-pension">
+								<p>Я неработающий пенсионер</p>
+								<div id="toggle" class="toggle" onclick="toggleSwitch()">
+									<div class="toggle-circle"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="calculate-box-right">
+						<div class="calculate-box-right-top">
+							<p class="c-b-r-t-1">Ежемесячный платеж</p>
+							<p class="c-b-r-t-2">3 150 ₽</p>
+							<p class="c-b-r-t-3">Вам понадобится</p>
+							<p class="c-b-r-t-4">– Паспорт РФ</p>
+						</div>
+						<div class="calculate-box-right-bottom">
+							<div class="calculate-box-right-button">
+								<p>Оформить заявку</p> <img src="assets/img/icons8-стрелка-100.png" alt="Ссылка">
+							</div>
+							<div class="calculate-box-right-button btn-white">
+								<p>Подробнее</p><img src="assets/img/icons8-стрелка-100.png" alt="Ссылка">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<section class="command-fon">
+			<div class="command">
+				<h1 class="command-h1">Команда</h1>
+				<div class="command-box">
+					<div class="left-command">
+						<div class="command-text-box">
+							<h1>Присоединяйтесь к <br> команде ОКБ</h1>
+							<div class="box-command-info">
+								<div class="command-info">
+									<p class="command-main">300+</p>
+									<p class="command-main-bottom">вакансий</p>
+								</div>
+								<div class="command-info">
+									<p class="command-main">Топ-10</p>
+									<p class="command-main-bottom">По версии Работа.ру</p>
+								</div>
+							</div>
+							<button class="btn-command">Присоединиться</button>
+						</div>
+						<img class="command-img" src="assets/img/i-Photoroom.png" alt="Команда">
+					</div>
+					<div class="right-command">
+						<div class="command-link">
+							<p>О банке ОКБ</p>
+							<div class="rect"><img src="assets/img/icons8-стрелка-100.png" alt="Ссылка"></div>
+						</div>
+						<div class="command-link">
+							<p>О команде ОКБ</p>
+							<div class="rect"><img src="assets/img/icons8-стрелка-100.png" alt="Ссылка"></div>
+						</div>
+						<div class="command-link">
+							<p>Пресс-служба</p>
+							<div class="rect"><img src="assets/img/icons8-стрелка-100.png" alt="Ссылка"></div>
+						</div>
+						<div class="command-link">
+							<p>Контакты</p>
+							<div class="rect"><img src="assets/img/icons8-стрелка-100.png" alt="Ссылка"></div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+	</main>
+	<div class="dividing-line"></div>
+	<footer>
+		<div class="footer-top">
+			<div class="footer-left">
+				<img src="assets/img/logo-no-bg-preview (carve.photos).png" alt="logo">
+				<nav class="nav-footer">
+					<a href="">О ОКБ</a>
+					<a href="">Новости</a>
+					<a href="">Блог</a>
+					<a href="">Работа</a>
+					<a href="">Банкоматы</a>
+					<a href="exchangerate.html">Курс валют</a>
+					<a href="">Безопасность</a>
+					<a href="">Для инвестеров</a>
+				</nav>
+				<div class="text-box">
+					<p>АО «ОКБ» использует файлы «cookie», с целью персонализации сервисов и повышения удобства
+						пользования <br>
+						веб-сайтом. «Cookie» представляют собой небольшие файлы, содержащие информацию о предыдущих <br>
+						посещениях веб-сайта. Если вы не хотите использовать файлы «cookie», измените настройки
+						браузера.
+
+					</p>
+					<p>За оформление Карты в Дизайне Банк может взимать плату, размер которой устанавливается <br>
+						Банком и доводится до Клиента до подачи заявки на выпуск/перевыпуск Карты в Мобильном
+						Банке/Интернет-Банке. <br>
+						Плата взимается в дату подачи Клиентом указанной заявки в рублях РФ или эквиваленте в валюте
+						Картсчета <br>
+						по курсу Банка России на дату взимания платы. Плата не взимается при выпуске Карты в Дизайне при
+						заключении <br>
+						Договора расчетной карты, а также при перевыпуске Карты в Дизайне, ранее оформленной в таком же
+						Дизайне.</p>
+				</div>
+			</div>
+			<div class="footer-right">
+				<div class="contact">
+					<div class="tel">
+						<a href="tel:+">8 (800) 700-24-24</a>
+						<p>Бесплатный звонок по России</p>
+					</div>
+					<div class="tel">
+						<a href="tel:+">+7 (888) 850-24-24</a>
+						<p>Для звонков за пределами России </p>
+					</div>
+				</div>
+				<div class="social">
+					<img src="assets/img/icons8-vk-com-96.png" alt="VK"><img src="assets/img/icons8-telegram-100.png"
+						alt="Telegram"><img src="assets/img/icons8-odnoklassniki-90.png" alt="Одноклассники">
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			© 2025—2025, АО «ОКБ», официальный сайт, универсальная лицензия ЦБ РФ № 2673
+		</div>
+	</footer>
+	<script src="assets/script/script.js"></script>
+</body>
+
+</html>
