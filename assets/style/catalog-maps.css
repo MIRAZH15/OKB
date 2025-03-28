@@ -1,0 +1,243 @@
+@import "style.css";
+
+main {
+	height: 121.3889vh;
+	background-color: var(--color-color5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.catalog-maps-fon {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 3vh;
+}
+.catalog-maps-h1 {
+	color: var(--color-color1);
+	font-family: var(--font-family-Montserrat);
+	font-size: 3.7037vh;
+	font-weight: var(--font-weight-Black);
+	margin: 0;
+}
+
+.catalog-maps-btn-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1.5vh;
+}
+
+.catalog-maps-btn1 {
+	color: white;
+	font-family: var(--font-family-Montserrat);
+	font-weight: var(--font-weight-Medium);
+	font-size: 1.2963vh;
+	background-color: var(--color-color3);
+	border: none;
+	width: 10vh;
+	height: 3.6111vh;
+	border-radius: 0.4630vh;
+	cursor: pointer;
+}
+.catalog-maps-btn2 {
+	color: white;
+	font-family: var(--font-family-Montserrat);
+	font-weight: var(--font-weight-Medium);
+	font-size: 1.2963vh;
+	background-color: var(--color-color4);
+	border: none;
+	width: 11.8519vh;
+	height: 3.6111vh;
+	border-radius: 0.4630vh;
+	cursor: pointer;
+}
+.catalog-maps-btn3 {
+	color: white;
+	font-family: var(--font-family-Montserrat);
+	font-weight: var(--font-weight-Medium);
+	font-size: 1.2963vh;
+	background-color: var(--color-color4);
+	border: none;
+	width: 13.7037vh;
+	height: 3.6111vh;
+	border-radius: 0.4630vh;
+	cursor: pointer;
+}
+.catalog-maps-box-fon {
+	background-color: var(--color-color3);
+	width: 107.6852vh;
+	height: 46.9444vh;
+	border-radius: 1.3889vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.catalog-maps-box {
+	background-color: var(--color-color5);
+	width: 103.0556vh;
+	height: 42.3148vh;
+	border-radius: 0.9259vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10vh;
+	
+}
+.catalog-maps-box-h1 {
+	color: white;
+	font-family: var(--font-family-Montserrat);
+	font-weight: var(--font-weight-Medium);
+	font-size: 3.7037vh;
+	margin: 0;
+	margin-bottom: 1vh;
+}
+.catalog-maps-box-p {
+	color: white;
+	font-family: var(--font-family-Montserrat);
+	font-weight: var(--font-weight-Medium);
+	font-size: 1.3889vh;
+	opacity: 0.7;
+	margin: 0;
+}
+.catalog-maps-box-info h1 {
+	color: white;
+	font-family: var(--font-family-Montserrat);
+	font-weight: var(--font-weight-SemiBold);
+	font-size: 1.8519vh;
+	margin: 0;
+	margin: 0.5vh 0;
+}
+.catalog-maps-box-info p {
+	color: white;
+	font-family: var(--font-family-Montserrat);
+	font-weight: var(--font-weight-SemiBold);
+	font-size: 1.2037vh;
+	margin: 0;
+	opacity: 0.7;
+}
+.catalog-maps-box-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 3vh;
+	margin: 6vh 0;
+}
+.catalog-maps-box-right {
+	height: 25.1852vh;
+	margin-top: 10vh;
+}
+.catalog-maps-box-info-btn {
+	display: flex;
+	align-items: center;
+	gap: 1.5vh;
+}
+.atalog-maps-box-info-btn1 {
+	background-color: var(--color-color3);
+	border:0.0926vh solid var(--color-color3);
+	color: white;
+	font-family: var(--font-family-Montserrat);
+	font-size: 1.4815vh;
+	font-weight: var(--font-weight-SemiBold);
+	width: 18.5185vh;
+	height: 4.6296vh;
+	border-radius: 0.9259vh;
+	cursor: pointer;
+}
+.atalog-maps-box-info-btn2 {
+	background-color: var(--color-color5);
+	border:0.0926vh solid white;
+	color: white;
+	font-family: var(--font-family-Montserrat);
+	font-size: 1.4815vh;
+	font-weight: var(--font-weight-SemiBold);
+	width: 18.5185vh;
+	height: 4.6296vh;
+	border-radius: 0.9259vh;
+	cursor: pointer;
+}
+.catalog-maps-box-left {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1.5vh;
+	
+}
+.c-m-b-f2 {
+	background-color: var(--color-color4);
+}
+.c-m-b-r {
+	width: 36.2037vh;
+	height: 34.4444vh;
+	margin-top: 8vh;	
+}
+.c-m-b-b {
+	margin: 3.8vh 0;
+}
+@media (max-width: 768px) {
+	.catalog-maps-box {
+		gap: 3vh;
+	}
+	.catalog-maps-box-fon {
+		width: 97vh;
+		height: 43vh;
+	}
+	.catalog-maps-box {
+		width: 93.0556vh;
+		height: 40.3148vh;
+		
+	}
+}
+@media (max-width: 700px) {
+	.catalog-maps-box {
+		flex-direction: column-reverse;
+	}
+	main {
+		height: 185vh;
+	}
+	.catalog-maps-box-fon {
+		width: 59vh;
+		height: 81vh;
+	}
+	.catalog-maps-box {
+		width: 56.3148vh;
+		height: 77.0556vh;
+		
+	}
+	.catalog-maps-box-right {
+		margin-top: 0;
+	}
+	.catalog-maps-box-h1 {
+		text-align: center;
+		margin: 0 1vh;
+	}
+	.catalog-maps-box-p {
+		text-align: center;
+		margin: 0 1vh;
+	}
+	.catalog-maps-box-info-btn {
+		justify-content: center;
+	}
+}
+@media (max-width: 430px) {
+	.catalog-maps-box-box {
+		display: none;
+	}
+	.catalog-maps-box-info-btn {
+		flex-direction: column;
+	}
+	.catalog-maps-box-fon {
+		width: 49vh;
+		height: 73vh;
+	}
+	.catalog-maps-box {
+		width: 45.3148vh;
+		height: 70.0556vh;
+		
+	}
+	main {
+		height: 175vh;
+	}
+}

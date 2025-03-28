@@ -1,0 +1,88 @@
+@import "style.css";
+
+main {
+	height: 57.2222vh;
+	background-color: var(--color-color5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.exchangerate-fon {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.exchangerate-fon h1 {
+	color: white;
+	font-family: var(--font-family-Montserrat);
+	font-weight: var(--font-weight-Black);
+	font-size: 4.4444vh;
+	margin: 0;
+	margin-bottom: 1.5vh;
+}
+.exchangerate-fon p {
+	color: white;
+	font-family: var(--font-family-Montserrat);
+	font-weight: var(--font-weight-Medium);
+	opacity: 0.7;
+	font-size: 1.8519vh;
+	text-align: center;
+	margin: 0;
+	margin-bottom: 3vh;
+}
+.exchangerate-table {
+	color: white;
+	font-family: var(--font-family-Montserrat);
+	font-weight: var(--font-weight-Medium);
+	width: 93.2407vh;
+	height: 28.6111vh;
+}
+.table-top {
+	font-size: 1.4815vh;
+}
+.table-left {
+	font-size: 1.8519vh;
+}
+.table-center {
+	text-align: center;
+}
+.exchange-rate {
+	text-align: center;
+	color: var(--color-color3);
+	font-weight: var(--font-weight-Bold);
+	font-size: 3.3333vh;
+}
+@media (max-width: 768px) {
+	.exchangerate-fon h1 {
+		text-align: center;
+		margin: 0 3vh;
+	}
+	.exchangerate-table {
+		width: 70vh;
+	}
+}
+@media (max-width: 470px) {
+	.exchangerate-fon h1 {
+		font-size: 3.5vh;
+	}
+	.exchangerate-table {
+		width: 45vh;
+	}
+	.exchangerate-fon p {
+		font-size: 1.3vh;
+
+	}
+}
+@media (max-width: 350px) {
+	.exchangerate-fon h1 {
+		font-size: 3vh;
+	}
+	.exchangerate-table {
+		width: 45vh;
+	}
+	.exchangerate-fon p {
+		font-size: 1.1vh;
+
+	}
+}

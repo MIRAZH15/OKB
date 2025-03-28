@@ -1,0 +1,120 @@
+@import "style.css";
+
+main {
+	height: 93.2407vh;
+	background-color: var(--color-color5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.debitcard-fon {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 3vh;
+}
+.debitcard-fon h1 {
+	color: white;
+	font-family: var(--font-family-Montserrat);
+	font-weight: var(--font-weight-Black);
+	font-size: 4.4444vh;
+	text-align: center;
+	margin-top: 0;
+}
+.debitcard-fon img {
+	width: 38.4259vh;
+}
+
+.debitcard-fon p {
+	text-align: center;
+	color: white;
+	font-family: var(--font-family-Montserrat);
+	font-weight: var(--font-weight-Medium);
+	font-size: 1.8519vh;
+	margin: 0;
+}
+
+.debitcard-btn {
+	width: 23.1481vh;
+	height: 5.5556vh;
+	border-radius: 1.8519vh;
+	background-color: var(--color-color3);
+	border: none;
+	color: white;
+	font-family: var(--font-family-Montserrat);
+	font-weight: var(--font-weight-Medium);
+	font-size: 1.8519vh;
+	cursor: pointer;
+}
+.debitcard-btn:hover {
+	opacity: 0.7;
+}
+
+.debitcard-info-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5vh;
+}
+.debitcard-info {
+	background-color: var(--color-color4);
+	width: 32.9630vh;
+	height: 18.8889vh;
+	border-radius: 1.3889vh;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5vh;
+}
+
+.debitcard-info img {
+	width: 2.7778vh;
+	position: relative;
+	left: 45%;
+	margin-top: 1vh;
+}
+.debitcard-info h3 {
+	margin: 0;
+	color: white;
+	font-family: var(--font-family-Montserrat);
+	font-weight: var(--font-weight-SemiBold);
+	font-size: 1.8519vh;
+	margin: 0 4vh;
+}
+.debitcard-info p {
+	margin: 0;
+	color: white;
+	font-family: var(--font-family-Montserrat);
+	font-weight: var(--font-weight-SemiBold);
+	font-size: 1.2037vh;
+	text-align: left;
+	margin: 0 4vh;
+	opacity: 0.7;
+}
+@media (max-width: 840px) { 
+	.debitcard-fon h1 {
+		text-align: center;
+		margin: 0 3vh;
+	}
+	.debitcard-info-box {
+		flex-wrap: wrap;
+		margin: 0 3vh;
+	}
+	main {
+		height: auto;
+		padding: 5vh;
+	}
+}
+@media (max-width: 400px) { 
+	.debitcard-fon h1 {
+		font-size: 3.5vh;
+	}
+	.debitcard-info-box {
+		flex-wrap: wrap;
+		margin: 0 3vh;
+	}
+	main {
+		height: auto;
+		padding: 5vh;
+	}
+}
