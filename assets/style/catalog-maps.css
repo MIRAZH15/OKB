@@ -265,23 +265,6 @@ main {
 	}
 
 	.catalog-maps-box-fon {
-		width: 49vh;
-		height: 73vh;
-	}
-
-	.catalog-maps-box {
-		width: 45.3148vh;
-		height: 70.0556vh;
-
-	}
-
-	main {
-		height: 175vh;
-	}
-}
-
-@media (max-width: 390px) {
-	.catalog-maps-box-fon {
 		width: 43vh;
 		height: 75vh;
 	}
@@ -294,4 +277,8 @@ main {
 	.catalog-maps-box-h1 {
 		font-size: 3vh;
 	}
-}
+
+	main {
+		height: 175vh;
+	}
+}
