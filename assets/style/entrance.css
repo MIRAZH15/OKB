@@ -344,11 +344,14 @@ main {
 	.footer-top {
 		gap: 1vh;
 	}
+.entrance-left input {
+		width: 40vh;
+	}
 }
 
 @media (max-width: 390px) {
 	.entrance-left input {
-		width: 15vh;
+		width: 37vh;
 	}
 
 }
