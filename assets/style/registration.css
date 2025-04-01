@@ -7,18 +7,21 @@ main {
 	align-items: center;
 	justify-content: center;
 }
+
 .reg-fon h1 {
 	color: white;
 	font-family: var(--font-family-Montserrat);
 	font-weight: var(--font-weight-SemiBold);
 	font-size: 3.7037vh;
 }
+
 .reg {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	flex-direction: column	;
+	flex-direction: column;
 }
+
 .circle {
 	width: 4.6296vh;
 	height: 4.6296vh;
@@ -29,6 +32,7 @@ main {
 	justify-content: center;
 	cursor: pointer;
 }
+
 .circle-1 {
 	opacity: 0.1;
 }
@@ -52,9 +56,11 @@ main {
 	background: white;
 	opacity: 0.7;
 }
+
 .circle-text-1 {
 	position: relative;
 }
+
 .circle-text {
 	color: white;
 	font-family: var(--font-family-Montserrat);
@@ -62,11 +68,13 @@ main {
 	font-size: 1.2037vh;
 	height: 0;
 }
+
 .c-t-1 {
 	position: relative;
 	left: -0.2vh;
 	top: -0.2vh;
 }
+
 .c-t-2 {
 	position: relative;
 	left: 21vh;
@@ -74,6 +82,7 @@ main {
 	opacity: 0.1;
 	width: 15vh;
 }
+
 .c-t-3 {
 	position: relative;
 	left: 44.5vh;
@@ -82,6 +91,7 @@ main {
 	text-align: center;
 	width: 15vh;
 }
+
 .reg-method {
 	width: 45.2778vh;
 	margin: 4vh 0;
@@ -89,6 +99,7 @@ main {
 	align-items: center;
 	justify-content: space-between;
 }
+
 .reg-method-box {
 	width: 20.4630vh;
 	height: 10.1852vh;
@@ -104,12 +115,15 @@ main {
 	gap: 1.5vh;
 	cursor: pointer;
 }
+
 .reg-method-box img {
 	width: 4.6296vh;
 }
+
 .r-m-b-2 {
 	opacity: 0.1;
 }
+
 .fio-phone span {
 	color: white;
 	font-weight: var(--font-weight-Medium);
@@ -117,6 +131,7 @@ main {
 	font-size: 1.3889vh;
 	opacity: 0.7;
 }
+
 .fio-phone input {
 	color: white;
 	font-weight: var(--font-weight-Medium);
@@ -130,9 +145,11 @@ main {
 	margin: 1vh 0;
 	padding-left: 1vh;
 }
+
 .date-pass {
 	width: 46.8778vh;
 }
+
 .date-pass span {
 	color: white;
 	font-weight: var(--font-weight-Medium);
@@ -140,6 +157,7 @@ main {
 	font-size: 1.3889vh;
 	opacity: 0.7;
 }
+
 .date-pass input {
 	color: white;
 	font-weight: var(--font-weight-Medium);
@@ -153,6 +171,7 @@ main {
 	margin: 1vh 0;
 	padding-left: 1vh;
 }
+
 .date-pass img {
 	position: relative;
 	top: 0.5vh;
@@ -174,41 +193,43 @@ main {
 	font-family: var(--font-family-Montserrat);
 	font-weight: var(--font-weight-Medium);
 }
+
 .entrance-checkbox label {
 	margin: 0;
 }
 
 .entrance-checkbox input {
-	display: none; 
+	display: none;
 }
 
 .entrance-checkbox label {
 	position: relative;
 	display: inline-block;
-	height: 1.3889vh; 
-	width: 1.3889vh; 
-	background-color: transparent; 
-	border: 1px solid #34293E; 
-	border-radius: 4px; 
-	cursor: pointer; 
+	height: 1.3889vh;
+	width: 1.3889vh;
+	background-color: transparent;
+	border: 1px solid #34293E;
+	border-radius: 4px;
+	cursor: pointer;
 }
 
-.entrance-checkbox input:checked + label {
-	background-color: var(--color-color3); 
-	border-color: var(--color-color3); 
+.entrance-checkbox input:checked+label {
+	background-color: var(--color-color3);
+	border-color: var(--color-color3);
 }
 
-.entrance-checkbox input:checked + label::after {
+.entrance-checkbox input:checked+label::after {
 	content: '';
 	position: absolute;
-	left: 4px; 
-	top: 2px; 
-	width: 1.25px; 
-	height: 5px; 
-	border: solid white; 
+	left: 4px;
+	top: 2px;
+	width: 1.25px;
+	height: 5px;
+	border: solid white;
 	border-width: 0 2px 2px 0;
 	transform: rotate(45deg);
 }
+
 .pass-info {
 	color: white;
 	font-size: 1.1111vh;
@@ -221,6 +242,7 @@ main {
 	top: -7.5vh;
 	width: 20vh;
 }
+
 .reg-btn-box {
 	display: flex;
 	align-items: center;
@@ -230,6 +252,7 @@ main {
 	top: -3vh;
 
 }
+
 .reg-btn-1 {
 	width: 33.0556vh;
 	height: 6.0185vh;
@@ -240,7 +263,9 @@ main {
 	font-size: 1.8519vh;
 	font-family: var(--font-family-Montserrat);
 	font-weight: var(--font-weight-SemiBold);
+	cursor: pointer;
 }
+
 .reg-btn-2 {
 	width: 18.5185vh;
 	height: 6.0185vh;
@@ -251,28 +276,45 @@ main {
 	font-size: 1.8519vh;
 	font-family: var(--font-family-Montserrat);
 	font-weight: var(--font-weight-SemiBold);
+	cursor: pointer;
 }
+
+.reg-btn-1:hover {
+	opacity: 0.7;
+}
+
+.reg-btn-2:hover {
+	opacity: 0.7;
+}
+
 .nav-header {
 	display: none;
 }
+
 .box-theams-account {
 	display: none;
 }
+
 .text-box {
 	display: none;
 }
+
 .social {
 	display: none;
 }
+
 .footer-top {
 	gap: 20vh;
 }
+
 .tel p {
-    margin: 0;
+	margin: 0;
 }
+
 .tel {
 	margin-top: 3vh;
 }
+
 .contact {
 	display: flex;
 	flex-direction: column;
@@ -284,17 +326,54 @@ main {
 	header {
 		justify-content: center;
 	}
+
 	.text-box-circle {
 		display: none;
 	}
+
 	.reg-btn-box {
 		flex-wrap: wrap;
 		gap: 1.5vh;
 	}
+
 	.reg-fon h1 {
 		text-align: center;
 	}
+
 	.footer-top {
 		gap: 1vh;
 	}
+}
+
+@media (max-width: 390px) {
+	.reg-btn-box {
+		flex-direction: column-reverse;
+	}
+
+	.fio-phone input {
+		width: 37vh;
+	}
+
+	.reg-method {
+		justify-content: center;
+		gap: 1vh;
+	}
+
+	.date-pass {
+		width: 38vh;
+	}
+
+	.pass-info {
+		color: white;
+		font-size: 1.1111vh;
+		margin: 0;
+		font-family: var(--font-family-Montserrat);
+		font-weight: var(--font-weight-Medium);
+		opacity: 0.7;
+		position: relative;
+		left: 25vh;
+		top: -8.5vh;
+		width: 15vh;
+	}
+
 }

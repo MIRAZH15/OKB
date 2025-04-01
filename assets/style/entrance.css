@@ -21,6 +21,7 @@ main {
 	justify-content: center;
 	gap: 1.5vh;
 }
+
 .entrance-left h1 {
 	color: white;
 	font-family: var(--font-family-Montserrat);
@@ -42,11 +43,13 @@ main {
 	gap: 1.5vh;
 
 }
+
 .entrance-line {
 	width: 29.5vh;
 	border-bottom: 0.5px solid white;
 	opacity: 0.7;
 }
+
 .group-of-choice {
 	display: flex;
 	align-items: center;
@@ -54,6 +57,7 @@ main {
 	justify-content: center;
 	cursor: pointer;
 }
+
 .group-of-choice p {
 	color: white;
 	font-size: 1.3889vh;
@@ -61,13 +65,16 @@ main {
 	font-weight: var(--font-weight-Medium);
 	margin: 0.5;
 }
+
 .choic-1 {
 	height: 0.3704vh;
 	width: 6.4815vh;
 	background-color: var(--color-color3);
 	border-top-left-radius: 0.4630vh;
 	border-top-right-radius: 0.4630vh;
+	opacity: 0.1;
 }
+
 .choic-2 {
 	height: 0.3704vh;
 	width: 8.3333vh;
@@ -76,6 +83,7 @@ main {
 	border-top-right-radius: 0.4630vh;
 	opacity: 0.1;
 }
+
 .choic-3 {
 	height: 0.3704vh;
 	width: 11.5741vh;
@@ -84,6 +92,18 @@ main {
 	border-top-right-radius: 0.4630vh;
 	opacity: 0.1;
 }
+
+.active {
+	background-color: var(--color-color5);
+}
+
+.group-of-choice.active .choic-1,
+.group-of-choice.active .choic-2,
+.group-of-choice.active .choic-3 {
+	opacity: 1;
+	background-color: var(--color-color3);
+}
+
 .entrance-left input {
 	height: 4.1667vh;
 	width: 44.5370vh;
@@ -93,10 +113,12 @@ main {
 	padding-left: 3vh;
 	color: white;
 }
+
 .entrance-left input::placeholder {
-    color: white;
-    opacity: 0.7; 
+	color: white;
+	opacity: 0.7;
 }
+
 .checkbox-href {
 	display: flex;
 	align-items: center;
@@ -109,6 +131,7 @@ main {
 	align-items: center;
 	gap: 1vh;
 }
+
 .entrance-checkbox {
 	color: white;
 	font-size: 1.1111vh;
@@ -117,36 +140,37 @@ main {
 }
 
 .entrance-checkbox input {
-	display: none; 
+	display: none;
 }
 
 .entrance-checkbox label {
 	position: relative;
 	display: inline-block;
-	height: 1.3889vh; 
-	width: 1.3889vh; 
-	background-color: transparent; 
-	border: 1px solid #34293E; 
-	border-radius: 4px; 
-	cursor: pointer; 
+	height: 1.3889vh;
+	width: 1.3889vh;
+	background-color: transparent;
+	border: 1px solid #34293E;
+	border-radius: 4px;
+	cursor: pointer;
 }
 
-.entrance-checkbox input:checked + label {
-	background-color: var(--color-color3); 
-	border-color: var(--color-color3); 
+.entrance-checkbox input:checked+label {
+	background-color: var(--color-color3);
+	border-color: var(--color-color3);
 }
 
-.entrance-checkbox input:checked + label::after {
+.entrance-checkbox input:checked+label::after {
 	content: '';
 	position: absolute;
-	left: 4px; 
-	top: 2px; 
-	width: 1.25px; 
-	height: 5px; 
-	border: solid white; 
+	left: 4px;
+	top: 2px;
+	width: 1.25px;
+	height: 5px;
+	border: solid white;
 	border-width: 0 2px 2px 0;
 	transform: rotate(45deg);
 }
+
 .checkbox-href a {
 	color: var(--color-color3);
 	font-size: 1.1111vh;
@@ -154,6 +178,7 @@ main {
 	font-weight: var(--font-weight-Medium);
 	text-decoration: none;
 }
+
 .entrance-btn-box {
 	display: flex;
 	align-items: center;
@@ -161,6 +186,7 @@ main {
 	flex-direction: column;
 	gap: 1.5vh;
 }
+
 .e-b-b-1 {
 	width: 100%;
 	height: 6.0185vh;
@@ -173,8 +199,9 @@ main {
 	font-weight: var(--font-weight-SemiBold);
 	cursor: pointer;
 	transition: 0.3s;
-	
+
 }
+
 .e-b-b-2 {
 	width: 100%;
 	height: 6.0185vh;
@@ -188,6 +215,7 @@ main {
 	cursor: pointer;
 	transition: 0.3s;
 }
+
 .e-b-b-1:hover {
 	opacity: 0.7;
 }
@@ -195,6 +223,7 @@ main {
 .e-b-b-2:hover {
 	opacity: 0.7;
 }
+
 .entrance-margin {
 	margin-bottom: 1.5vh;
 }
@@ -214,28 +243,34 @@ main {
 	width: 2.9630vh;
 	height: 2.9630vh;
 }
+
 .line-login {
 	background-color: white;
 	height: 0.5px;
 	width: 19.2593vh;
 	opacity: 0.7;
 }
+
 .login-method1 {
 	display: flex;
 	align-items: center;
 	margin-left: 1vh;
 	gap: 1.5vh;
+	cursor: pointer;
 }
+
 .login-method2 {
 	display: flex;
 	align-items: center;
 	margin-left: 1vh;
 	gap: 1.5vh;
+	cursor: pointer;
 }
 
 .application {
 	height: 13.9815vh;
 }
+
 .application-picter {
 	position: relative;
 	z-index: 1;
@@ -250,35 +285,45 @@ main {
 	align-items: center;
 	margin-left: 1vh;
 	gap: 1.5vh;
+	cursor: pointer;
 }
+
 .application2 {
 	display: flex;
 	align-items: center;
 	margin-left: 1vh;
 	gap: 1.5vh;
+	cursor: pointer;
 }
 
 .nav-header {
 	display: none;
 }
+
 .box-theams-account {
 	display: none;
 }
+
 .text-box {
 	display: none;
 }
+
 .social {
 	display: none;
 }
+
 .footer-top {
 	gap: 20vh;
 }
+
 .tel p {
-    margin: 0;
+	margin: 0;
 }
+
 .tel {
 	margin-top: 3vh;
 }
+
 .contact {
 	display: flex;
 	flex-direction: column;
@@ -291,10 +336,19 @@ main {
 	.entrance-right {
 		display: none;
 	}
+
 	header {
 		justify-content: center;
 	}
+
 	.footer-top {
 		gap: 1vh;
 	}
+}
+
+@media (max-width: 390px) {
+	.entrance-left input {
+		width: 37vh;
+	}
+
 }

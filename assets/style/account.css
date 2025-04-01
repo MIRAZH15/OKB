@@ -40,6 +40,10 @@ main {
 	opacity: 0.5;
 }
 
+.account-nav-box nav a.active-1 {
+	opacity: 1;
+}
+
 .account-nav-box nav {
 	margin-top: 54px;
 }
@@ -79,12 +83,34 @@ main {
 	padding: 18px;
 	border: 1px solid white;
 	border-radius: 5px;
+	position: relative;
 }
 
 .account-billing__header-currency img {
 	height: 20px;
 	width: 20px;
+	cursor: pointer;
 }
+
+.currency-dropdown {
+	display: none;
+	position: absolute;
+	background-color: var(--color-color5);
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	z-index: 1;
+	margin-top: 5px;/
+}
+
+.currency-option {
+	padding: 10px;
+	cursor: pointer;
+}
+
+.currency-option:hover {
+	opacity: 0.7;
+}
+
 
 .gray-p {
 	font-size: 1.8519vh;
@@ -203,6 +229,7 @@ label {
 
 .user img {
 	width: 1.8519vh;
+	cursor: pointer;
 }
 
 .usernam {
@@ -277,13 +304,16 @@ label {
 	.account-content-box {
 		flex-direction: column;
 	}
+
 	.account-billing {
 		margin-left: 5vh;
 	}
+
 	.account-nav-box nav {
 		margin: 3vh;
 		text-align: center;
 	}
+
 	.account-content-box {
 		gap: 0;
 	}
