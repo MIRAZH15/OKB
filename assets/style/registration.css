@@ -321,7 +321,7 @@ main {
 	justify-content: end;
 
 }
-@media (max-width: 1280px) {
+@media (max-width: 1200px) {
 	.reg-btn-box {
 		flex-direction: column-reverse;
 	}
@@ -332,11 +332,11 @@ main {
 	}
 
 .fio-phone input {
-		width: 37vh;
+		width: 35vh;
 	}
 
 	.date-pass {
-		width: 38vh;
+		width: 34vh;
 	}
 
 	.pass-info {
@@ -351,8 +351,7 @@ main {
 		top: -8.5vh;
 		width: 15vh;
 	}
-
-
+
 }
 
 @media (max-width: 480px) {
