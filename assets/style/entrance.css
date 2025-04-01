@@ -331,6 +331,12 @@ main {
 
 }
 
+@media (max-width: 1200px) {
+	.entrance-left input {
+		width: 40vh;
+	}
+
+}
 
 @media (max-width: 589px) {
 	.entrance-right {
@@ -344,14 +350,10 @@ main {
 	.footer-top {
 		gap: 1vh;
 	}
-.entrance-left input {
-		width: 40vh;
-	}
 }
 
 @media (max-width: 390px) {
 	.entrance-left input {
 		width: 37vh;
-	}
-
+	}
 }
