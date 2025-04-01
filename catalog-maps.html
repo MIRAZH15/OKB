@@ -8,19 +8,20 @@
 	<link rel="stylesheet" href="assets/style/style.css">
 	<link rel="stylesheet" href="assets/style/catalog-maps.css">
 	<title>Дебетовые карты</title>
-	
+
 </head>
 
 <body>
 	<div class="move-header">
 		<header>
 			<div class="box-logo-and-nav">
-				<img onclick="window.location.href='index.html';" src="assets/img/logo-no-bg-preview (carve.photos).png" alt="logo" class="logo">
+				<img onclick="window.location.href='index.html';" src="assets/img/logo-no-bg-preview (carve.photos).png"
+					alt="logo" class="logo">
 				<nav class="nav-header" id="nav-header">
-					<a href="">Частным лицам</a>
-					<a href="">Бизнесу</a>
-					<a href="">Акционерам</a>
-					<a href="">Еще</a>
+					<a onclick="showAlert()" href="">Частным лицам</a>
+					<a onclick="showAlert()" href="">Бизнесу</a>
+					<a onclick="showAlert()" href="">Акционерам</a>
+					<a onclick="showAlert()" href="">Еще</a>
 				</nav>
 			</div>
 			<div class="box-theams-account">
@@ -51,7 +52,7 @@
 		<div class="catalog-maps-fon">
 			<h1 class="catalog-maps-h1">Дебетовые карты</h1>
 			<div class="catalog-maps-btn-box">
-				<button class="catalog-maps-btn1">Все карты</button>
+				<button class="catalog-maps-btn1 active">Все карты</button>
 				<button class="catalog-maps-btn2">Премиальные</button>
 				<button class="catalog-maps-btn3">Путешественнику</button>
 			</div>
@@ -76,9 +77,10 @@
 							</div>
 						</div>
 						<div class="catalog-maps-box-info-btn">
-								<button class="atalog-maps-box-info-btn1">Оформить карту</button>
-								<button onclick="window.location.href='debitcard.html';"class="atalog-maps-box-info-btn2">Подробнее</button>
-							</div>
+							<button onclick="showAlert()" class="atalog-maps-box-info-btn1">Оформить карту</button>
+							<button onclick="window.location.href='debitcard.html';"
+								class="atalog-maps-box-info-btn2">Подробнее</button>
+						</div>
 					</div>
 					<img class="catalog-maps-box-right" src="assets/img/1111.png" alt="Дебетовая карта White">
 				</div>
@@ -87,7 +89,9 @@
 				<div class="catalog-maps-box">
 					<div class="catalog-maps-box-left">
 						<h1 class="catalog-maps-box-h1">Премиальная карта <br> WhiteGold</h1>
-						<p class="catalog-maps-box-p">Переводы без комиссии до 100 000 Р в месяц, 7% кэшбэка в <br> легендарных ресторанах, бесплатная страховка. Еще больше <br>привилегий дома и в поездках</p>
+						<p class="catalog-maps-box-p">Переводы без комиссии до 100 000 Р в месяц, 7% кэшбэка в <br>
+							легендарных ресторанах, бесплатная страховка. Еще больше <br>привилегий дома и в поездках
+						</p>
 						<div class="catalog-maps-box-box c-m-b-b">
 							<div class="catalog-maps-box-info">
 								<h1>До 60 000 Р/мес</h1>
@@ -103,9 +107,9 @@
 							</div>
 						</div>
 						<div class="catalog-maps-box-info-btn">
-								<button class="atalog-maps-box-info-btn1">Оформить карту</button>
-								<button class="atalog-maps-box-info-btn2">Подробнее</button>
-							</div>
+							<button onclick="showAlert()" class="atalog-maps-box-info-btn1">Оформить карту</button>
+							<button onclick="showAlert()" class="atalog-maps-box-info-btn2">Подробнее</button>
+						</div>
 					</div>
 					<img class="catalog-maps-box-right c-m-b-r" src="assets/img/111111.png" alt="Дебетовая карта White">
 				</div>
@@ -118,14 +122,14 @@
 			<div class="footer-left">
 				<img src="assets/img/logo-no-bg-preview (carve.photos).png" alt="logo">
 				<nav class="nav-footer">
-					<a href="">О ОКБ</a>
-					<a href="">Новости</a>
-					<a href="">Блог</a>
-					<a href="">Работа</a>
-					<a href="">Банкоматы</a>
+					<a onclick="showAlert()" href="">О ОКБ</a>
+					<a onclick="showAlert()" href="">Новости</a>
+					<a onclick="showAlert()" href="">Блог</a>
+					<a onclick="showAlert()" href="">Работа</a>
+					<a onclick="showAlert()" href="">Банкоматы</a>
 					<a href="exchangerate.html">Курс валют</a>
-					<a href="">Безопасность</a>
-					<a href="">Для инвестеров</a>
+					<a onclick="showAlert()" href="">Безопасность</a>
+					<a onclick="showAlert()" href="">Для инвестеров</a>
 				</nav>
 				<div class="text-box">
 					<p>АО «ОКБ» использует файлы «cookie», с целью персонализации сервисов и повышения удобства
@@ -158,8 +162,8 @@
 					</div>
 				</div>
 				<div class="social">
-					<img src="assets/img/icons8-vk-com-96.png" alt="VK"><img src="assets/img/icons8-telegram-100.png"
-						alt="Telegram"><img src="assets/img/icons8-odnoklassniki-90.png" alt="Одноклассники">
+					<img onclick="showAlert()" src="assets/img/icons8-vk-com-96.png" alt="VK"><img onclick="showAlert()" src="assets/img/icons8-telegram-100.png"
+						alt="Telegram"><img onclick="showAlert()" src="assets/img/icons8-odnoklassniki-90.png" alt="Одноклассники">
 				</div>
 			</div>
 		</div>

@@ -15,7 +15,8 @@
 	<div class="move-header">
 		<header>
 			<div class="box-logo-and-nav">
-				<img onclick="window.location.href='index.html';" src="assets/img/logo-no-bg-preview (carve.photos).png" alt="logo" class="logo">
+				<img onclick="window.location.href='index.html';" src="assets/img/logo-no-bg-preview (carve.photos).png"
+					alt="logo" class="logo">
 				<nav class="nav-header" id="nav-header">
 					<a href="">Частным лицам</a>
 					<a href="">Бизнесу</a>
@@ -72,11 +73,11 @@
 					</div>
 				</div>
 				<div class="reg-method">
-					<div class="reg-method-box">
+					<div class="reg-method-box" onclick="toggleSelection(this)">
 						<img src="assets/img/icons8-passport-100.png" alt="passport">
 						<p>По паспорту</p>
 					</div>
-					<div class="reg-method-box r-m-b-2">
+					<div class="reg-method-box r-m-b-2" onclick="toggleSelection(this)">
 						<img src="assets/img/icons8-document-96.png" alt="number-score">
 						<p>По номеру <br>счета</p>
 					</div>
@@ -87,7 +88,7 @@
 				</div>
 				<div class="fio-phone">
 					<span>Номер телефона</span><br>
-					<input type="text" required>
+					<input type="text" id="phone" required>
 				</div>
 				<div class="date-pass">
 					<div class="date-pass">
@@ -97,18 +98,19 @@
 					</div>
 					<div class="pass">
 						<span>Серия и номер</span><br>
-						<input type="text" required placeholder="XXXX XXXXXX">
+						<input type="text" id="pass" required placeholder="XXXX XXXXXX" maxlength="10">
 					</div>
 					<div class="entrance-checkbox">
 						<input type="checkbox" id="checkbox1">
 						<label for="checkbox1"></label>
 						<p>Даю согласие на получение услуг Банка</p>
 					</div>
-					<p class="pass-info">Если у вас нету паспорта <br> гражданина РФ. То пройдите <br> очную регистрацию в <br>ближайшем офисе ОКБ.</p>
+					<p class="pass-info">Если у вас нету паспорта <br> гражданина РФ. То пройдите <br> очную регистрацию
+						в <br>ближайшем офисе ОКБ.</p>
 				</div>
 				<div class="reg-btn-box">
-					<button class="reg-btn-1">Отменить регистрацию</button>
-					<button class="reg-btn-2">Далее</button>
+					<button onclick="showAlert()" class="reg-btn-1">Отменить регистрацию</button>
+					<button onclick="showAlert()" class="reg-btn-2">Далее</button>
 				</div>
 			</form>
 		</section>
@@ -119,14 +121,14 @@
 			<div class="footer-left">
 				<img src="assets/img/logo-no-bg-preview (carve.photos).png" alt="logo">
 				<nav class="nav-footer">
-					<a href="">О ОКБ</a>
-					<a href="">Новости</a>
-					<a href="">Блог</a>
-					<a href="">Работа</a>
-					<a href="">Банкоматы</a>
+					<a onclick="showAlert()" href="">О ОКБ</a>
+					<a onclick="showAlert()" href="">Новости</a>
+					<a onclick="showAlert()" href="">Блог</a>
+					<a onclick="showAlert()" href="">Работа</a>
+					<a onclick="showAlert()" href="">Банкоматы</a>
 					<a href="exchangerate.html">Курс валют</a>
-					<a href="">Безопасность</a>
-					<a href="">Для инвестеров</a>
+					<a onclick="showAlert()" href="">Безопасность</a>
+					<a onclick="showAlert()" href="">Для инвестеров</a>
 				</nav>
 				<div class="text-box">
 					<p>АО «ОКБ» использует файлы «cookie», с целью персонализации сервисов и повышения удобства
@@ -174,4 +176,5 @@
 	<script src="assets/script/jqurey/jquery.mask.min.js"></script>
 	<script src="assets/script/registration.js"></script>
 </body>
+
 </html>

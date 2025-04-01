@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,18 @@
 	<link rel="stylesheet" href="assets/style/exchangerate.css">
 	<title>Курс валют</title>
 </head>
+
 <body>
 	<div class="move-header">
 		<header>
 			<div class="box-logo-and-nav">
-				<img onclick="window.location.href='index.html';" src="assets/img/logo-no-bg-preview (carve.photos).png" alt="logo" class="logo">
+				<img onclick="window.location.href='index.html';" src="assets/img/logo-no-bg-preview (carve.photos).png"
+					alt="logo" class="logo">
 				<nav class="nav-header" id="nav-header">
-					<a href="">Частным лицам</a>
-					<a href="">Бизнесу</a>
-					<a href="">Акционерам</a>
-					<a href="">Еще</a>
+					<a onclick="showAlert()" href="">Частным лицам</a>
+					<a onclick="showAlert()" href="">Бизнесу</a>
+					<a onclick="showAlert()" href="">Акционерам</a>
+					<a onclick="showAlert()" href="">Еще</a>
 				</nav>
 			</div>
 			<div class="box-theams-account">
@@ -47,7 +50,8 @@
 	<main>
 		<section class="exchangerate-fon">
 			<h1>Курсы популярных валют для частных лиц</h1>
-			<p>При переводе между своими счетами и оплате услуг в сервисах ОКБ. <br>Действительны на XX:XX по Москве, XX февраля 2025</p>
+			<p>При переводе между своими счетами и оплате услуг в сервисах ОКБ. <br>
+				Действительны на <span id="current-time"></span> по Москве, <span id="current-date"></span></p>
 			<table class="exchangerate-table">
 				<tr>
 					<td class="table-top">Валюта</td>
@@ -69,7 +73,7 @@
 					<td class="exchange-rate">89.15</td>
 					<td class="exchange-rate">133.75</td>
 				</tr>
-		</table>
+			</table>
 		</section>
 	</main>
 	<div class="dividing-line"></div>
@@ -78,14 +82,14 @@
 			<div class="footer-left">
 				<img src="assets/img/logo-no-bg-preview (carve.photos).png" alt="logo">
 				<nav class="nav-footer">
-					<a href="">О ОКБ</a>
-					<a href="">Новости</a>
-					<a href="">Блог</a>
-					<a href="">Работа</a>
-					<a href="">Банкоматы</a>
+					<a onclick="showAlert()" href="">О ОКБ</a>
+					<a onclick="showAlert()" href="">Новости</a>
+					<a onclick="showAlert()" href="">Блог</a>
+					<a onclick="showAlert()" href="">Работа</a>
+					<a onclick="showAlert()" href="">Банкоматы</a>
 					<a href="exchangerate.html">Курс валют</a>
-					<a href="">Безопасность</a>
-					<a href="">Для инвестеров</a>
+					<a onclick="showAlert()" href="">Безопасность</a>
+					<a onclick="showAlert()" href="">Для инвестеров</a>
 				</nav>
 				<div class="text-box">
 					<p>АО «ОКБ» использует файлы «cookie», с целью персонализации сервисов и повышения удобства
@@ -118,8 +122,8 @@
 					</div>
 				</div>
 				<div class="social">
-					<img src="assets/img/icons8-vk-com-96.png" alt="VK"><img src="assets/img/icons8-telegram-100.png"
-						alt="Telegram"><img src="assets/img/icons8-odnoklassniki-90.png" alt="Одноклассники">
+					<img onclick="showAlert()" src="assets/img/icons8-vk-com-96.png" alt="VK"><img onclick="showAlert()" src="assets/img/icons8-telegram-100.png"
+						alt="Telegram"><img onclick="showAlert()" src="assets/img/icons8-odnoklassniki-90.png" alt="Одноклассники">
 				</div>
 			</div>
 		</div>
@@ -129,4 +133,5 @@
 	</footer>
 	<script src="assets/script/exchangerate.js"></script>
 </body>
+
 </html>

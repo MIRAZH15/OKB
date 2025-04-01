@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,18 @@
 	<link rel="stylesheet" href="assets/style/account.css">
 	<title>Личный кабинет</title>
 </head>
+
 <body>
 	<div class="move-header">
 		<header>
 			<div class="box-logo-and-nav">
-				<img onclick="window.location.href='index.html';" src="assets/img/logo-no-bg-preview (carve.photos).png" alt="logo" class="logo">
+				<img onclick="window.location.href='index.html';" src="assets/img/logo-no-bg-preview (carve.photos).png"
+					alt="logo" class="logo">
 				<nav class="nav-header" id="nav-header">
-					<a href="">Мои продукты</a>
-					<a href="">Переводы</a>
-					<a href="">Оплата услуг</a>
-					<a href="">Витрина</a>
+					<a onclick="showAlert()" href="">Мои продукты</a>
+					<a onclick="showAlert()" href="">Переводы</a>
+					<a onclick="showAlert()" href="">Оплата услуг</a>
+					<a onclick="showAlert()" href="">Витрина</a>
 				</nav>
 			</div>
 			<div class="box-theams-account">
@@ -26,7 +29,7 @@
 						<img class="user" src="assets/img/icons8-male-user-90.png" alt="account">
 					</div>
 				</div>
-				<div class="user" >
+				<div class="user">
 					<div class="user-box">
 						<p class="usernam">Захаров Иван</p>
 						<p class="status">Пакет «Классический»</p>
@@ -55,26 +58,30 @@
 		<div class="container">
 			<div class="account-content-box">
 				<div class="account-nav-box">
-					<nav><a href="#" style="opacity: 1;">Сводка и избранное</a></nav>
-					<nav><a href="#">Счета и карты</a></nav>
-					<nav><a href="#">Сбережения</a></nav>
-					<nav><a href="#">Кредиты</a></nav>
+					<nav><a onclick="showAlert()" href="#" class="active-1">Сводка и избранное</a></nav>
+					<nav><a onclick="showAlert()" href="#">Счета и карты</a></nav>
+					<nav><a onclick="showAlert()" href="#">Сбережения</a></nav>
+					<nav><a onclick="showAlert()" href="#">Кредиты</a></nav>
 				</div>
 				<div class="account-billing">
 					<div class="account-billing__header">
 						<div class="account-billing__header-balance-box">
 							<div class="account-billing__header-balance">
 								<p class="gray-p">Cобственные средства</p>
-								<p class="white-p">100,00 ₽</p>
+								<p class="white-p" id="amount">100,00 ₽</p>
 							</div>
 							<div class="account-billing__header-balance">
 								<p class="gray-p">Всего</p>
-								<p class="white-p">100,00 ₽</p>
+								<p class="white-p" id="amount2">100,00 ₽</p>
 							</div>
 						</div>
 						<div class="account-billing__header-currency">
-							<p class="white-p">₽</p>
-							<img src="assets/img/icons8-chevron-down-96.png" alt="arrow">
+							<p class="white-p" id="selected-currency">₽</p>
+							<img src="assets/img/icons8-chevron-down-96.png" alt="arrow" id="currency-toggle">
+							<div class="currency-dropdown" id="currency-dropdown">
+			 					<p class="currency-option" data-currency="₽">₽</p>
+								<p class="currency-option" data-currency="$">$</p>
+							</div>
 						</div>
 					</div>
 					<div class="account-billing__main">
@@ -94,7 +101,6 @@
 							</div>
 						</div>
 						<div class="account-billing__main-card">
-							<!-- <img src="assets/img/GnuCash_logo.svg.png" alt="Карта2"> -->
 							<div class="card-header">
 								<h2>Мастер счет</h2>
 								<p>Мастер счет в долларах США</p>
@@ -134,7 +140,7 @@
 						<p class="gray-p">Продажа</p>
 						<p class="cost">85,50</p>
 					</div>
-					
+
 				</div>
 			</div>
 		</div>
@@ -145,14 +151,14 @@
 			<div class="footer-left">
 				<img src="assets/img/logo-no-bg-preview (carve.photos).png" alt="logo">
 				<nav class="nav-footer">
-					<a href="">О ОКБ</a>
-					<a href="">Новости</a>
-					<a href="">Блог</a>
-					<a href="">Работа</a>
-					<a href="">Банкоматы</a>
+					<a onclick="showAlert()" href="">О ОКБ</a>
+					<a onclick="showAlert()" href="">Новости</a>
+					<a onclick="showAlert()" href="">Блог</a>
+					<a onclick="showAlert()" href="">Работа</a>
+					<a onclick="showAlert()" href="">Банкоматы</a>
 					<a href="exchangerate.html">Курс валют</a>
-					<a href="">Безопасность</a>
-					<a href="">Для инвестеров</a>
+					<a onclick="showAlert()" href="">Безопасность</a>
+					<a onclick="showAlert()" href="">Для инвестеров</a>
 				</nav>
 				<div class="text-box">
 					<p>АО «ОКБ» использует файлы «cookie», с целью персонализации сервисов и повышения удобства
@@ -185,8 +191,8 @@
 					</div>
 				</div>
 				<div class="social">
-					<img src="assets/img/icons8-vk-com-96.png" alt="VK"><img src="assets/img/icons8-telegram-100.png"
-						alt="Telegram"><img src="assets/img/icons8-odnoklassniki-90.png" alt="Одноклассники">
+					<img onclick="showAlert()" src="assets/img/icons8-vk-com-96.png" alt="VK"><img onclick="showAlert()" src="assets/img/icons8-telegram-100.png"
+						alt="Telegram"><img onclick="showAlert()" src="assets/img/icons8-odnoklassniki-90.png" alt="Одноклассники">
 				</div>
 			</div>
 		</div>
@@ -196,4 +202,5 @@
 	</footer>
 	<script src="assets/script/account.js"></script>
 </body>
+
 </html>

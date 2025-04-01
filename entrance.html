@@ -14,7 +14,8 @@
 	<div class="move-header">
 		<header>
 			<div class="box-logo-and-nav">
-				<img onclick="window.location.href='index.html';" src="assets/img/logo-no-bg-preview (carve.photos).png" alt="logo" class="logo">
+				<img onclick="window.location.href='index.html';" src="assets/img/logo-no-bg-preview (carve.photos).png"
+					alt="logo" class="logo">
 				<nav class="nav-header" id="nav-header">
 					<a href="">Частным лицам</a>
 					<a href="">Бизнесу</a>
@@ -52,16 +53,16 @@
 				<h1>Вход в ОКБ онлайн</h1>
 				<div class="entrance-group-of-choice">
 					<div class="e-g-o-c-box">
-						<div class="group-of-choice">
+						<div class="group-of-choice active" data-choice="1">
 							<p>Логин</p>
 							<div class="choic-1"></div>
 						</div>
-						<div class="group-of-choice">
+						<div class="group-of-choice" data-choice="2">
 							<p>Телефон</p>
 							<div class="choic-2"></div>
 						</div>
-						<div class="group-of-choice">
-							<p>Номер карты</p>
+						<div class="group-of-choice" data-choice="3">
+						<p>Номер карты</p>
 							<div class="choic-3"></div>
 						</div>
 					</div>
@@ -87,21 +88,27 @@
 			<div class="entrance-right">
 				<div class="login-method">
 					<div class="login-method1">
-						<img class="entrance-right-img" src="assets/img/icons8-qr-64.png" alt="qr-code"><p>Вход по QR-коду</p>
+						<img onclick="showAlert()" class="entrance-right-img" src="assets/img/icons8-qr-64.png" alt="qr-code">
+						<p>Вход по QR-коду</p>
 					</div>
 					<div class="line-login"></div>
 					<div class="login-method2">
-						<img class="entrance-right-img" src="assets/img/icons8-dialing-number-96.png" alt="pin-code"><p>Вход по коду</p>
+						<img onclick="showAlert()" class="entrance-right-img" src="assets/img/icons8-dialing-number-96.png" alt="pin-code">
+						<p>Вход по коду</p>
 					</div>
 				</div>
 				<div class="application">
 					<div class="application1">
-						<img class="entrance-right-img" src="assets/img/icons8-apple-90.png" alt="pin-code"><p>IOS</p>
+						<img onclick="showAlert()" class="entrance-right-img" src="assets/img/icons8-apple-90.png" alt="pin-code">
+						<p>IOS</p>
 					</div>
 					<div class="application2">
-						<img class="entrance-right-img" src="assets/img/icons8-android-90.png" alt="pin-code"><p>Android</p>
+						<img onclick="showAlert()" class="entrance-right-img" src="assets/img/icons8-android-90.png" alt="pin-code">
+						<p>Android</p>
 					</div>
-					<img class="application-picter" src="assets/img/5i3X6JEqlsxYr-petTqbWTPsGAVvpa6xpZ61JPAaP5TUkE60z2Xyk_8ZiYsF3uFJRiFSs7905zcytSra2tbEfAEK.png" alt="picter">
+					<img class="application-picter"
+						src="assets/img/5i3X6JEqlsxYr-petTqbWTPsGAVvpa6xpZ61JPAaP5TUkE60z2Xyk_8ZiYsF3uFJRiFSs7905zcytSra2tbEfAEK.png"
+						alt="picter">
 				</div>
 			</div>
 		</section>
@@ -112,14 +119,14 @@
 			<div class="footer-left">
 				<img src="assets/img/logo-no-bg-preview (carve.photos).png" alt="logo">
 				<nav class="nav-footer">
-					<a href="">О ОКБ</a>
-					<a href="">Новости</a>
-					<a href="">Блог</a>
-					<a href="">Работа</a>
-					<a href="">Банкоматы</a>
+					<a onclick="showAlert()" href="">О ОКБ</a>
+					<a onclick="showAlert()" href="">Новости</a>
+					<a onclick="showAlert()" href="">Блог</a>
+					<a onclick="showAlert()" href="">Работа</a>
+					<a onclick="showAlert()" href="">Банкоматы</a>
 					<a href="exchangerate.html">Курс валют</a>
-					<a href="">Безопасность</a>
-					<a href="">Для инвестеров</a>
+					<a onclick="showAlert()" href="">Безопасность</a>
+					<a onclick="showAlert()" href="">Для инвестеров</a>
 				</nav>
 				<div class="text-box">
 					<p>АО «ОКБ» использует файлы «cookie», с целью персонализации сервисов и повышения удобства
@@ -161,6 +168,7 @@
 			© 2025—2025, АО «ОКБ», официальный сайт, универсальная лицензия ЦБ РФ № 2673
 		</div>
 	</footer>
+	<script src="assets/script/entrance.js"></script>
 </body>
 
 </html>
