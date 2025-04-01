@@ -70,7 +70,7 @@ main {
 	cursor: pointer;
 }
 
-.active {
+.active-btn {
 	background-color: var(--color-color3);
 }
 
