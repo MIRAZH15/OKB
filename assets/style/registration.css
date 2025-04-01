@@ -321,6 +321,22 @@ main {
 	justify-content: end;
 
 }
+@media (max-width: 1280px) {
+	.reg-btn-box {
+		flex-direction: column-reverse;
+	}
+
+	.fio-phone input {
+		width: 40vh;
+	}
+
+	.reg-method {
+		justify-content: center;
+		gap: 1vh;
+	}
+
+
+}
 
 @media (max-width: 480px) {
 	header {
@@ -345,19 +361,11 @@ main {
 	}
 }
 
-@media (max-width: 390px) {
-	.reg-btn-box {
-		flex-direction: column-reverse;
-	}
+@media (max-width: 390px) {
 
 	.fio-phone input {
 		width: 37vh;
-	}
-
-	.reg-method {
-		justify-content: center;
-		gap: 1vh;
-	}
+	}
 
 	.date-pass {
 		width: 38vh;
